@@ -1,6 +1,5 @@
 class RidesController < ApplicationController
   def create
-    raise params.inspect
     @user = User.find(current_user)
     @attraction = Attraction.find(params[:attraction_id])
     @ride = @attraction.rides.create(user_id: current_user)
