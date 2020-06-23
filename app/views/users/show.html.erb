@@ -1,5 +1,5 @@
 <% if flash[:notice] %>
- <%= raise inspect.params %>
+ <p><%= flash[:notice] %></p>
 <% end %>
 
 <p><%= "ADMIN" if is_admin? %></p>
